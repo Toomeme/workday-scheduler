@@ -12,12 +12,15 @@ var checkTime = function(hourEl) {
     $(hourEl).removeClass("past present future");
   
     // apply new class if task is near/over due date
-    if (moment().isAfter(timeConverted)) {
+    if (moment().isAfter(timeConverted,"hour")) {
       $(hourEl).addClass("past");
     } 
-    //else if (Math.abs(moment().diff(timeConverted, "days")) <= 2) {
-     // $(hourEl).addClass("list-group-item-warning");
-   // }
+    else if (moment().isSame(timeConverted)) {
+     $(hourEl).addClass("present");
+    }
+    else{
+        $(hourEl).addClass("future");
+    }
     
   };
 

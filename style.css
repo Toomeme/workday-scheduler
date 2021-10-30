@@ -64,6 +64,7 @@ textarea{
   border-bottom-right-radius: 15px;
   background-color: #06AED5;
   color: white;
+  height: inherit;
 }
 
 .saveBtn i:hover {
@@ -71,16 +72,5 @@ textarea{
   transition: all .3s ease-in-out;
 }
 
-.past{
-  background-color: lightgrey;
-}
-
-.present{
-  background-color: lightgreen;
-}
-
-.future{
-  background-color: salmon;
-}
 
 
