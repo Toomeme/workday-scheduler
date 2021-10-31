@@ -4,7 +4,6 @@ var checkTime = function(hourEl) {
   
     // convert to moment object with X AM formatting 
     var timeConverted = moment(time, "ha");
-    console.log(timeConverted);
   
     // remove any old classes from element
     $(hourEl).removeClass("past present future");
@@ -34,7 +33,7 @@ var checkTime = function(hourEl) {
         checkTime(el);
       });
 
-
+//save content for data-store siblings of the clicked button
 $("*[data-button]").on("click", function(){
         localStorage.setItem ("item-" + $(this).siblings("*[data-store]").attr("data-store"), $(this).siblings("*[data-store]").val());
         console.log("saved");
