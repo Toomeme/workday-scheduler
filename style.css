@@ -60,14 +60,22 @@ textarea{
 
 .saveBtn {
   border-left: 1px solid black;
+  border-bottom: 1px solid white;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: #06AED5;
   color: white;
   height: inherit;
+  text-align: center;
+  text-justify: auto;
 }
 
-.saveBtn i:hover {
+.oi{
+  margin-right: 40%;
+  margin-top: 8%;
+}
+
+.saveBtn:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
 }
